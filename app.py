@@ -14,6 +14,25 @@ st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allo
 st.subheader('Your Best Food and Exercise Advisor:spoon:')
 st.markdown('<style>h3{color: pink;  text-align: center;}</style>', unsafe_allow_html=True)
 
+hide_streamlit_style = """
+            <style>
+
+            background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+            background-size: cover;
+            
+            [data-testid="stToolbar"] {visibility: hidden;}
+            .reportview-container {
+            margin-top: -2em;
+        }
+            #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            #stDecoration {display:none;}
+            footer {visibility: hidden;}
+            div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 llm = OpenAI(temperature=0.9)
 
