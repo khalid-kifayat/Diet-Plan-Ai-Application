@@ -11,7 +11,9 @@ load_dotenv()
 
 st.title("Personalized Diet and Workout Recommender:coffee:")
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
-st.subheader('Your Best Food and Exercise Advisor:spoon:')
+st.subheader('Your Best Food and Exercise Advisor:spoon:', divider='rainbow')
+st.markdown('<style>h3{color: pink;  text-align: center;}</style>', unsafe_allow_html=True)
+st.caption('Python-Langchain Application created by Khalid kifayat :sunglasses:')
 st.markdown('<style>h3{color: pink;  text-align: center;}</style>', unsafe_allow_html=True)
 
 hide_streamlit_style = """
